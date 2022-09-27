@@ -6,7 +6,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar main-content";
@@ -20,35 +20,85 @@ body {
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+    background-color: rgb(11, 142, 202);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.menu-container {
+    margin: 20px 0 20px 40px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+a {
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.personal {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.standard {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content {
     grid-area: main-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "your-projects announcements"
         "your-projects trending";
+    background-color: rgb(177, 177, 177);
+    padding: 20px;
 }
 
 .your-projects {
     grid-area: your-projects;
+    margin: 20px;
 }
 
 .card-container {
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
-
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .announcements {
     grid-area: announcements;
 }
 
+.news-container {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
 .trending {
     grid-area: trending;
+}
+
+.trending-container {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
 }
