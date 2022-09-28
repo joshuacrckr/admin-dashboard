@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    font-family: sans-serif;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -14,6 +18,50 @@ body {
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px 40px 10px 40px;
+    box-shadow: 0px 10px 50px 15px #d1d7df;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+
+#magnify {
+    height: 30px;
+    margin: 0 10px 0 10px;
+}
+
+.search {
+    height: 40px;
+    width: 75%;
+    background-color: rgba(211, 211, 211, 0.534);
+    border: none;
+    border-radius: 20px;
+}
+
+#bell {
+    height: 30px;
+    margin: 0 10px 0 10px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1992d4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .sidebar {
@@ -23,12 +71,15 @@ body {
     align-items: baseline;
     background-color: rgb(11, 142, 202);
     color: white;
-    font-family: sans-serif;
     font-weight: bold;
 }
 
 .menu-container {
     margin: 20px 0 20px 40px;
+}
+
+#jellyfish {
+    height: 40px;
 }
 
 h1 {
@@ -62,8 +113,9 @@ a {
     grid-template-areas: 
         "your-projects announcements"
         "your-projects trending";
-    background-color: rgb(177, 177, 177);
+    background-color: #e2e8f0;
     padding: 20px;
+    margin: 5px 0 0 0;
 }
 
 .your-projects {
@@ -85,6 +137,7 @@ a {
 
 .announcements {
     grid-area: announcements;
+    padding: 20px;
 }
 
 .news-container {
@@ -95,6 +148,7 @@ a {
 
 .trending {
     grid-area: trending;
+    padding: 20px;
 }
 
 .trending-container {
