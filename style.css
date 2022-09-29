@@ -29,7 +29,7 @@ body {
     align-items: center;
 }
 
-#magnify {
+.header-svg {
     height: 30px;
     margin: 0 10px 0 10px;
 }
@@ -40,11 +40,6 @@ body {
     background-color: rgba(211, 211, 211, 0.534);
     border: none;
     border-radius: 20px;
-}
-
-#bell {
-    height: 30px;
-    margin: 0 10px 0 10px;
 }
 
 .bottom {
@@ -78,12 +73,27 @@ button {
     margin: 20px 0 20px 40px;
 }
 
-#jellyfish {
+.title-wrapper {
+    display: flex;
+}
+
+.sidebar-svg {
     height: 40px;
+    margin: 0 5px 0 5px;
 }
 
 h1 {
     font-size: 36px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.link-svg {
+    height: 25px;
+    margin: 0 15px 0 10px;
 }
 
 a {
@@ -130,7 +140,7 @@ a {
 }
 
 .card {
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
     background-color: white;
 }
@@ -141,6 +151,9 @@ a {
 }
 
 .news-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
     padding: 10px;
     border-radius: 5px;
     background-color: white;
@@ -152,6 +165,9 @@ a {
 }
 
 .trending-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     padding: 10px;
     border-radius: 5px;
     background-color: white;
